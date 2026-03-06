@@ -18,7 +18,7 @@ const products = [
     title: "Wedding Suites",
     description:
       "Complete invitation suites featuring coordinated pieces from save the dates to day-of stationery.",
-    image: "/images/wedding-suites.jpg",
+    image: "/images/wedding-suites-menu-placecards-2.png",
     alt: "Bespoke wedding invitation suite - handcrafted fine paper stationery by Poetic Cloud",
   },
   {
@@ -26,7 +26,7 @@ const products = [
     title: "Custom Stationery",
     description:
       "Personal correspondence deserves beautiful paper. Monograms, thank you cards, and more.",
-    image: "/images/custom-stationery.jpg",
+    image: "/images/custom-stationery-placecards.jpg",
     alt: "Custom monogram stationery and thank you cards - Poetic Cloud, NYC",
   },
 ]
