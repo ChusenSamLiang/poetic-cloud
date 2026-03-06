@@ -3,6 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { Star } from "lucide-react"
 
 export const metadata: Metadata = {
     title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
@@ -58,7 +59,7 @@ export default function AboutPage() {
                                 <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-2xl">
                                     <Image
                                         src="/images/about-studio.jpg"
-                                        alt="Artisan workspace with fine paper and design tools"
+                                        alt="Poetic Cloud Design Studio — custom wedding invitation workspace in New York"
                                         fill
                                         className="object-cover"
                                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -80,6 +81,60 @@ export default function AboutPage() {
                             Our goal is to make it as breathtaking and unique as the event itself."
                         </p>
                         <p className="mt-4 text-sm uppercase tracking-widest text-primary">— Siyun Z, Founder</p>
+                    </div>
+                </section>
+                <section className="py-24 bg-background">
+                    <div className="mx-auto max-w-7xl px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-serif text-3xl tracking-wide text-foreground mb-4">
+                                Love Notes from our Etsy Shop
+                            </h2>
+                            <p className="text-muted-foreground">Kind words from our wonderful clients</p>
+                        </div>
+
+                        <div className="grid gap-8 md:grid-cols-3">
+                            {[
+                                {
+                                    name: "Skylar",
+                                    text: "Absolutely loved this! It was so quick to set up and it's great quality. Highly recommend for any wedding planning!",
+                                    product: "Minimalist Wedding Thank You Cards"
+                                },
+                                {
+                                    name: "Kaelee",
+                                    text: "Thank you for the customization and super fast response, creation and ship time! Can't wait to send these out!",
+                                    product: "Bespoke Stationery Set"
+                                },
+                                {
+                                    name: "Morgan",
+                                    text: "Very cute cards, excited to use after my baby shower. The paper quality and design are just perfect.",
+                                    product: "Personalized Stationery"
+                                }
+                            ].map((review, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: index * 0.1 }}
+                                    viewport={{ once: true }}
+                                    className="p-8 rounded-sm border border-border bg-card relative"
+                                >
+                                    <div className="flex gap-1 mb-4">
+                                        {[...Array(5)].map((_, i) => (
+                                            <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                                        ))}
+                                    </div>
+                                    <p className="text-muted-foreground leading-relaxed mb-6 italic">
+                                        "{review.text}"
+                                    </p>
+                                    <div>
+                                        <p className="font-medium text-foreground">{review.name}</p>
+                                        <p className="text-xs text-primary uppercase tracking-widest mt-1">
+                                            {review.product}
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
                     </div>
                 </section>
             </main>
