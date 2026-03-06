@@ -65,7 +65,7 @@ export default function AboutPage() {
                             "We believe that the invitation is the first chapter of your celebration's story.
                             Our goal is to make it as breathtaking and unique as the event itself."
                         </p>
-                        <p className="mt-4 text-sm uppercase tracking-widest text-primary">— Sam Liang, Founder</p>
+                        <p className="mt-4 text-sm uppercase tracking-widest text-primary">— Siyun Z, Founder</p>
                     </div>
                 </section>
             </main>
