@@ -49,11 +49,7 @@ export default function AboutPage() {
                                         dedicated design practice that celebrates life's biggest milestones.
                                     </p>
                                     <p>
-                                        Every suite we design is a collaborative journey. We combine
-                                        handcrafted design with premium materials, collaborating with
-                                        artisanal production partners across the United States to ensure
-                                        that every piece we deliver meets the highest standards of quality
-                                        and artisan craftsmanship.
+                                        Poetic Cloud Design Studio is a bespoke wedding stationery company founded in 2022 and based in Queens, New York. We specialize in custom wedding invitations, handcrafted invitation suites, and fine paper goods for couples worldwide.
                                     </p>
                                 </div>
                             </div>
