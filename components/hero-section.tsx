@@ -44,7 +44,7 @@ export function HeroSection() {
         >
           <div className="relative aspect-[4/5] w-full max-w-lg overflow-hidden rounded-sm shadow-2xl">
             <Image
-              src="/images/hero-invitation.jpg"
+              src="/images/wedding-menu-placecards.jpg"
               alt="Elegant wedding invitation suite featuring calligraphy and fine paper"
               fill
               className="object-cover"
