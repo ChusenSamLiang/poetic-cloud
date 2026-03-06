@@ -11,6 +11,7 @@ const products = [
     description:
       "Announce your special day with elegance. Custom designs that capture your unique style.",
     image: "/images/save-the-dates.jpg",
+    alt: "Custom save the date cards by Poetic Cloud Design Studio, New York",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const products = [
     description:
       "Complete invitation suites featuring coordinated pieces from save the dates to day-of stationery.",
     image: "/images/wedding-suites.jpg",
+    alt: "Bespoke wedding invitation suite - handcrafted fine paper stationery by Poetic Cloud",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const products = [
     description:
       "Personal correspondence deserves beautiful paper. Monograms, thank you cards, and more.",
     image: "/images/custom-stationery.jpg",
+    alt: "Custom monogram stationery and thank you cards - Poetic Cloud, NYC",
   },
 ]
 

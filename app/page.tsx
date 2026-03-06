@@ -10,14 +10,14 @@ import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
   title: 'Poetic Cloud | Custom Wedding Stationery & Bespoke Invitations',
-  description: 'Exquisite custom wedding invitations & handmade cards crafted for life\'s poetic moments. Shop our bespoke stationery collection on Etsy.',
+  description: 'Handcrafted bespoke wedding invitations designed in New York City. Custom stationery suites for your most meaningful moments. Shop on Etsy.',
   openGraph: {
-    title: 'Poetic Cloud | Custom Wedding Stationery',
-    description: 'Bespoke wedding invitations and handmade cards for life\'s most poetic moments.',
+    title: 'Poetic Cloud | Custom Wedding Stationery & Bespoke Invitations',
+    description: 'Handcrafted bespoke wedding invitations designed in New York City. Custom stationery suites for your most meaningful moments. Shop on Etsy.',
   },
   twitter: {
-    title: 'Poetic Cloud | Custom Wedding Stationery',
-    description: 'Bespoke wedding invitations and handmade cards for life\'s most poetic moments.',
+    title: 'Poetic Cloud | Custom Wedding Stationery & Bespoke Invitations',
+    description: 'Handcrafted bespoke wedding invitations designed in New York City. Custom stationery suites for your most meaningful moments. Shop on Etsy.',
   },
 }
 

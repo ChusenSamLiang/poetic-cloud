@@ -1,3 +1,5 @@
+"use client"
+
 import type { Metadata } from 'next'
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -5,18 +7,18 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Star } from "lucide-react"
 
-export const metadata: Metadata = {
-    title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
-    description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
-    openGraph: {
-        title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
-        description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
-    },
-    twitter: {
-        title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
-        description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
-    },
-}
+// export const metadata: Metadata = {
+//     title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
+//     description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
+//     openGraph: {
+//         title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
+//         description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
+//     },
+//     twitter: {
+//         title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
+//         description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
+//     },
+// }
 
 export default function AboutPage() {
     return (

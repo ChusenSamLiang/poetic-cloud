@@ -11,9 +11,9 @@ export function JsonLd() {
         "telephone": "",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "",
-            "addressLocality": "",
-            "postalCode": "",
+            "streetAddress": "Queens, NY",
+            "addressLocality": "New York",
+            "postalCode": "11101",
             "addressCountry": "US"
         },
         "geo": {
@@ -28,7 +28,9 @@ export function JsonLd() {
                 "Tuesday",
                 "Wednesday",
                 "Thursday",
-                "Friday"
+                "Friday",
+                "Saturday",
+                "Sunday"
             ],
             "opens": "09:00",
             "closes": "17:00"

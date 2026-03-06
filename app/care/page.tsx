@@ -69,7 +69,7 @@ export default function CarePage() {
                 <header className="bg-card border-b border-border py-24">
                     <div className="mx-auto max-w-7xl px-6 text-center">
                         <h1 className="font-serif text-4xl tracking-tight text-foreground md:text-5xl">
-                            Studio Resources & Care
+                            FAQs, Shipping, and Privacy Policy
                         </h1>
                         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
                             Information about our processes, shipping policies, and how we handle your orders.
