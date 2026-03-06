@@ -3,31 +3,31 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
-            url: 'https://poeticcloud.com',
+            url: 'https://poeticclouddesign.com',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 1,
         },
         {
-            url: 'https://poeticcloud.com/#collections',
+            url: 'https://poeticclouddesign.com/#collections',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.8,
         },
         {
-            url: 'https://poeticcloud.com/#process',
+            url: 'https://poeticclouddesign.com/#process',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.5,
         },
         {
-            url: 'https://poeticcloud.com/about',
+            url: 'https://poeticclouddesign.com/about',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.5,
         },
         {
-            url: 'https://poeticcloud.com/care',
+            url: 'https://poeticclouddesign.com/care',
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.5,
