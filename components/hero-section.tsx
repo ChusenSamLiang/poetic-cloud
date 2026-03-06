@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { HERO_CONTENT } from "@/lib/constants"
+import { HERO_CONTENT, SITE_CONFIG } from "@/lib/constants"
+import Link from "next/link"
 import Image from "next/image"
 
 export function HeroSection() {
@@ -26,11 +27,10 @@ export function HeroSection() {
             {HERO_CONTENT.description}
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Button size="lg" className="text-base" aria-label={HERO_CONTENT.primaryCta}>
-              {HERO_CONTENT.primaryCta}
-            </Button>
-            <Button size="lg" variant="outline" className="text-base bg-transparent" aria-label={HERO_CONTENT.secondaryCta}>
-              {HERO_CONTENT.secondaryCta}
+            <Button size="lg" className="text-base" asChild>
+              <Link href={SITE_CONFIG.etsyUrl} target="_blank" rel="noopener noreferrer">
+                {HERO_CONTENT.primaryCta}
+              </Link>
             </Button>
           </div>
         </motion.div>

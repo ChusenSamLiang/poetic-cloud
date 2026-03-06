@@ -9,9 +9,9 @@ import { motion, AnimatePresence } from "framer-motion"
 import { SITE_CONFIG } from "@/lib/constants"
 
 const navLinks = [
-  { href: "#collections", label: "Collections" },
-  { href: "#process", label: "Bespoke Process" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "/#collections", label: "Collections" },
+  { href: "/#process", label: "Bespoke Process" },
+  { href: `mailto:${SITE_CONFIG.contactEmail}`, label: "Contact Us" },
   { href: SITE_CONFIG.etsyUrl, label: "Shop on Etsy", external: true },
 ]
 
@@ -30,8 +30,8 @@ export function Navigation() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+        ? "bg-background/95 backdrop-blur-md shadow-sm"
+        : "bg-transparent"
         }`}
     >
       <nav className="mx-auto max-w-7xl px-6 py-4">
@@ -53,8 +53,10 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Button size="sm" className="ml-4">
-              Start Your Project
+            <Button size="sm" className="ml-4" asChild>
+              <Link href={SITE_CONFIG.etsyUrl} target="_blank" rel="noopener noreferrer">
+                Start Your Project
+              </Link>
             </Button>
           </div>
 
@@ -92,8 +94,10 @@ export function Navigation() {
                     {link.label}
                   </Link>
                 ))}
-                <Button size="sm" className="mt-2 w-fit">
-                  Start Your Project
+                <Button size="sm" className="mt-2 w-fit" asChild>
+                  <Link href={SITE_CONFIG.etsyUrl} target="_blank" rel="noopener noreferrer">
+                    Start Your Project
+                  </Link>
                 </Button>
               </div>
             </motion.div>

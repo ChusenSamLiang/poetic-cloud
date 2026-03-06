@@ -3,7 +3,8 @@ import { MessageCircle, Palette, Send } from "lucide-react"
 export const SITE_CONFIG = {
   name: "Poetic Cloud",
   description: "Bespoke Wedding Invitations & Custom Stationery",
-  etsyUrl: "https://www.etsy.com/shop/PoeticCloud", // Placeholder, will update if provided
+  etsyUrl: "https://www.etsy.com/shop/PoeticCloud",
+  contactEmail: "Poeticclouddesignstudio@gmail.com",
 }
 
 export const HERO_CONTENT = {

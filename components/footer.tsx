@@ -7,31 +7,38 @@ import { Input } from "@/components/ui/input"
 import { Instagram, Facebook, Paintbrush as Pinterest, ExternalLink } from "lucide-react"
 import { SITE_CONFIG } from "@/lib/constants"
 
+const TiktokIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg role="img" viewBox="0 0 24 24" fill="currentColor" {...props} xmlns="http://www.w3.org/2000/svg">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2s-3.45 0-3.45 0v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1 .05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+  </svg>
+)
+
 const footerLinks = {
   shop: [
-    { label: "Wedding Suites", href: "#" },
-    { label: "Save the Dates", href: "#" },
-    { label: "Custom Stationery", href: "#" },
+    // { label: "Wedding Suites", href: "#" },
+    // { label: "Save the Dates", href: "#" },
+    // { label: "Custom Stationery", href: "#" },
     { label: "Shop on Etsy", href: SITE_CONFIG.etsyUrl, external: true },
   ],
   company: [
-    { label: "About", href: "#" },
-    { label: "Our Process", href: "#process" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Contact", href: "#" },
+    { label: "About", href: "/about" },
+    { label: "Our Process", href: "/#process" },
+    { label: "Portfolio", href: "/#portfolio" },
+    { label: "Contact", href: `mailto:${SITE_CONFIG.contactEmail}` },
   ],
   resources: [
-    { label: "Journal", href: "#" },
-    { label: "FAQ", href: "#" },
-    { label: "Shipping & Returns", href: "#" },
-    { label: "Privacy Policy", href: "#" },
+    // { label: "Journal", href: "#" },
+    { label: "FAQ", href: "/care#faq" },
+    { label: "Shipping & Returns", href: "/care#shipping" },
+    { label: "Privacy Policy", href: "/care#privacy" },
   ],
 }
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Pinterest, href: "https://pinterest.com", label: "Pinterest" },
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+  // { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+  // { icon: Pinterest, href: "https://pinterest.com", label: "Pinterest" },
+  // { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+  { icon: TiktokIcon, href: "https://www.tiktok.com/@poeticcloud", label: "Tiktok" },
 ]
 
 export function Footer() {
@@ -161,7 +168,7 @@ export function Footer() {
 
           <Button asChild variant="outline" className="gap-2 bg-transparent">
             <Link
-              href="https://etsy.com"
+              href="https://www.etsy.com/shop/poeticcloud"
               target="_blank"
               rel="noopener noreferrer"
             >
