@@ -26,7 +26,7 @@ export default function AboutPage() {
                                         that tells your unique story.
                                     </p>
                                     <p>
-                                        Our founder, Sam Liang, established the studio with a simple mission:
+                                        Our founder, Siyun, established the studio with a simple mission:
                                         to transform life's most poetic moments into tangible keepsakes.
                                         What started as a passion for original artwork has grown into a
                                         dedicated design practice that celebrates life's biggest milestones.
