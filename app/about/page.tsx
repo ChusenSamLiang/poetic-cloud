@@ -1,7 +1,21 @@
+import type { Metadata } from 'next'
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
 import Image from "next/image"
+
+export const metadata: Metadata = {
+    title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
+    description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
+    openGraph: {
+        title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
+        description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
+    },
+    twitter: {
+        title: 'About Poetic Cloud | Bespoke Wedding Invitation & Stationery Studio, New York City',
+        description: 'Meet Poetic Cloud, a New York-based bespoke wedding stationery studio. Custom invitations crafted with fine paper goods and original artwork since 2022.',
+    },
+}
 
 export default function AboutPage() {
     return (
@@ -16,7 +30,7 @@ export default function AboutPage() {
                                     Our Story
                                 </span>
                                 <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl text-balance">
-                                    Artisans of the Written Invitation
+                                    Handcrafted Wedding Invitations & Bespoke Stationery Made in New York - Our Story
                                 </h1>
                                 <div className="mt-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
                                     <p>
@@ -59,7 +73,7 @@ export default function AboutPage() {
                 <section className="py-24 bg-card border-y border-border">
                     <div className="mx-auto max-w-3xl px-6 text-center">
                         <h2 className="font-serif text-3xl tracking-wide text-foreground">
-                            Our Commitment
+                            Our Commitment to Handcrafted Wedding Invitations & Stationery
                         </h2>
                         <p className="mt-6 text-lg text-muted-foreground italic">
                             "We believe that the invitation is the first chapter of your celebration's story.

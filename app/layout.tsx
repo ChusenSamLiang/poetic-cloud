@@ -8,23 +8,18 @@ const _playfair = Playfair_Display({ subsets: ["latin"], variable: '--font-serif
 const _inter = Inter({ subsets: ["latin"], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'Poetic Cloud | Custom Wedding Stationery & Bespoke Invitations',
-  description: 'Exquisite custom wedding invitations & handmade cards crafted for life\'s poetic moments. Shop our bespoke stationery collection on Etsy.',
+  title: 'Poetic Cloud',
+  description: 'Crafted for life\'s poetic moments.',
   keywords: ['Custom Wedding Stationery', 'Bespoke Invitations', 'Handmade Wedding Cards', 'Poetic Cloud', 'Etsy Wedding Shop'],
   authors: [{ name: 'Poetic Cloud' }],
   metadataBase: new URL('https://poeticcloud.com'), // Replace with actual domain
   openGraph: {
-    title: 'Poetic Cloud | Custom Wedding Stationery',
-    description: 'Bespoke wedding invitations and handmade cards for life\'s most poetic moments.',
-    url: 'https://poeticcloud.com',
     siteName: 'Poetic Cloud',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Poetic Cloud | Custom Wedding Stationery',
-    description: 'Bespoke wedding invitations and handmade cards for life\'s most poetic moments.',
   },
   generator: 'v0.app',
   icons: {
