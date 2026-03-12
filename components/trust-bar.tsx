@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+const SHOW_TRUST_BAR = false;
 
 const features = [
   "Martha Stewart Weddings",
@@ -10,6 +11,7 @@ const features = [
 ]
 
 export function TrustBar() {
+  if (!SHOW_TRUST_BAR) return null;
   return (
     <section className="border-y border-border bg-card py-8">
       <motion.div

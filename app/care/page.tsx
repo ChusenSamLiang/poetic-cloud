@@ -19,6 +19,27 @@ export default function CarePage() {
                     q: "Do you offer custom designs?",
                     a: "Yes! We specialize in bespoke stationery. Contact us for a custom consultation to bring your unique vision to life.",
                 },
+                {
+                    q: "What type of paper is used?",
+                    a: "Premium Cardstock 110lbs and standard A2 white envelope where applicable.",
+                },
+                {
+                    q: "How much do custom designs cost?",
+                    a: "Flexible pricing based on design complexity and materials.",
+                },
+                {
+                    q: "Do you offer calligraphy services?",
+                    a: "Yes, we offer calligraphy services for an additional fee.",
+                },
+                {
+                    q: "How far in advance should I order wedding invitations?",
+                    a: "As early as possible to avoid delays!",
+                },
+                {
+                    q: "Do you offer expedited service?",
+                    a: "Yes, please contact us for more information.",
+                },
+
             ],
         },
         {
