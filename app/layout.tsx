@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'Crafted for life\'s poetic moments.',
   keywords: ['Custom Wedding Stationery', 'Bespoke Invitations', 'Handmade Wedding Cards', 'Poetic Cloud', 'Etsy Wedding Shop'],
   authors: [{ name: 'Poetic Cloud' }],
-  metadataBase: new URL('https://poeticcloud.com'), // Replace with actual domain
+  metadataBase: new URL('https://poeticclouddesign.com'),
   openGraph: {
     siteName: 'Poetic Cloud',
     locale: 'en_US',
@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -41,6 +40,29 @@ export const metadata: Metadata = {
   },
 }
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Poetic Cloud",
+  "alternateName": "Poetic Cloud Design Studio",
+  "url": "https://poeticclouddesign.com",
+  "logo": "https://poeticclouddesign.com/icon.svg",
+  "description": "Bespoke wedding invitations and custom stationery handcrafted in New York City.",
+  "email": "Poeticclouddesignstudio@gmail.com",
+  "foundingDate": "2022",
+  "sameAs": [
+    "https://www.etsy.com/shop/PoeticCloud",
+    "https://instagram.com/poeticcloud"
+  ]
+}
+
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Poetic Cloud",
+  "url": "https://poeticclouddesign.com"
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +71,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${_playfair.variable} ${_inter.variable}`}>
       <body className={`font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+        />
         {children}
         <Analytics />
       </body>

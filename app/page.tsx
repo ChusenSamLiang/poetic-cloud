@@ -9,15 +9,20 @@ import { Footer } from "@/components/footer"
 import { JsonLd } from "@/components/json-ld"
 
 export const metadata: Metadata = {
-  title: 'Poetic Cloud | Custom Wedding Stationery & Bespoke Invitations',
+  title: 'Poetic Cloud | Bespoke Wedding Invitations & Custom Stationery | New York City',
   description: 'Handcrafted bespoke wedding invitations designed in New York City. Custom stationery suites for your most meaningful moments. Shop on Etsy.',
+  alternates: {
+    canonical: 'https://poeticclouddesign.com',
+  },
   openGraph: {
-    title: 'Poetic Cloud | Custom Wedding Stationery & Bespoke Invitations',
+    title: 'Poetic Cloud | Bespoke Wedding Invitations & Custom Stationery | New York City',
     description: 'Handcrafted bespoke wedding invitations designed in New York City. Custom stationery suites for your most meaningful moments. Shop on Etsy.',
+    images: [{ url: '/images/wedding-menu-placecards.jpg' }],
   },
   twitter: {
-    title: 'Poetic Cloud | Custom Wedding Stationery & Bespoke Invitations',
+    title: 'Poetic Cloud | Bespoke Wedding Invitations & Custom Stationery | New York City',
     description: 'Handcrafted bespoke wedding invitations designed in New York City. Custom stationery suites for your most meaningful moments. Shop on Etsy.',
+    images: ['/images/wedding-menu-placecards.jpg'],
   },
 }
 

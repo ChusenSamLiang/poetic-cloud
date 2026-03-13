@@ -1,46 +1,79 @@
+import type { Metadata } from 'next'
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+
+export const metadata: Metadata = {
+    title: 'FAQs & Shipping | Poetic Cloud Wedding Stationery',
+    description: 'Answers to common questions about custom wedding stationery orders, processing times, shipping, returns, and privacy policy at Poetic Cloud.',
+    alternates: {
+        canonical: 'https://poeticclouddesign.com/care',
+    },
+    openGraph: {
+        title: 'FAQs & Shipping | Poetic Cloud Wedding Stationery',
+        description: 'Answers to common questions about custom wedding stationery orders, processing times, shipping, returns, and privacy policy at Poetic Cloud.',
+        images: [{ url: '/images/wedding-menu-placecards.jpg' }],
+    },
+    twitter: {
+        title: 'FAQs & Shipping | Poetic Cloud Wedding Stationery',
+        description: 'Answers to common questions about custom wedding stationery orders, processing times, shipping, returns, and privacy policy at Poetic Cloud.',
+        images: ['/images/wedding-menu-placecards.jpg'],
+    },
+}
+
+const faqItems = [
+    {
+        q: "What is your processing time?",
+        a: "Most orders are processed within 3-5 business days. Custom design projects typically take 1-2 weeks for the initial design phase.",
+    },
+    {
+        q: "Can I cancel my order?",
+        a: "Cancellations are accepted within 12 hours of purchase. After this window, production or design work may have already begun.",
+    },
+    {
+        q: "Do you offer custom designs?",
+        a: "Yes! We specialize in bespoke stationery. Contact us for a custom consultation to bring your unique vision to life.",
+    },
+    {
+        q: "What type of paper is used?",
+        a: "Premium Cardstock 110lbs and standard A2 white envelope where applicable.",
+    },
+    {
+        q: "How much do custom designs cost?",
+        a: "Flexible pricing based on design complexity and materials.",
+    },
+    {
+        q: "Do you offer calligraphy services?",
+        a: "Yes, we offer calligraphy services for an additional fee.",
+    },
+    {
+        q: "How far in advance should I order wedding invitations?",
+        a: "As early as possible to avoid delays!",
+    },
+    {
+        q: "Do you offer expedited service?",
+        a: "Yes, please contact us for more information.",
+    },
+]
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(({ q, a }) => ({
+        "@type": "Question",
+        "name": q,
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": a
+        }
+    }))
+}
 
 export default function CarePage() {
     const sections = [
         {
             id: "faq",
             title: "Frequently Asked Questions",
-            content: [
-                {
-                    q: "What is your processing time?",
-                    a: "Most orders are processed within 3-5 business days. Custom design projects typically take 1-2 weeks for the initial design phase.",
-                },
-                {
-                    q: "Can I cancel my order?",
-                    a: "Cancellations are accepted within 12 hours of purchase. After this window, production or design work may have already begun.",
-                },
-                {
-                    q: "Do you offer custom designs?",
-                    a: "Yes! We specialize in bespoke stationery. Contact us for a custom consultation to bring your unique vision to life.",
-                },
-                {
-                    q: "What type of paper is used?",
-                    a: "Premium Cardstock 110lbs and standard A2 white envelope where applicable.",
-                },
-                {
-                    q: "How much do custom designs cost?",
-                    a: "Flexible pricing based on design complexity and materials.",
-                },
-                {
-                    q: "Do you offer calligraphy services?",
-                    a: "Yes, we offer calligraphy services for an additional fee.",
-                },
-                {
-                    q: "How far in advance should I order wedding invitations?",
-                    a: "As early as possible to avoid delays!",
-                },
-                {
-                    q: "Do you offer expedited service?",
-                    a: "Yes, please contact us for more information.",
-                },
-
-            ],
+            content: faqItems,
         },
         {
             id: "shipping",
@@ -85,6 +118,10 @@ export default function CarePage() {
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <Navigation />
             <main className="pt-20">
                 <header className="bg-card border-b border-border py-24">

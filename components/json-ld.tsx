@@ -1,40 +1,23 @@
 import React from 'react';
 
 export function JsonLd() {
-    const localBusinessSchema = {
+    const onlineBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "OnlineBusiness",
         "name": "Poetic Cloud",
-        "image": "https://poeticcloud.com/images/hero-invitation.jpg",
-        "@id": "https://poeticcloud.com",
-        "url": "https://poeticcloud.com",
-        "telephone": "",
+        "alternateName": "Poetic Cloud Design Studio",
+        "@id": "https://poeticclouddesign.com/#business",
+        "url": "https://poeticclouddesign.com",
+        "description": "Bespoke wedding invitations and custom stationery handcrafted in New York City.",
+        "email": "Poeticclouddesignstudio@gmail.com",
+        "foundingDate": "2022",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Queens, NY",
-            "addressLocality": "New York",
-            "postalCode": "11101",
+            "addressLocality": "Queens",
+            "addressRegion": "NY",
             "addressCountry": "US"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 0,
-            "longitude": 0
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "09:00",
-            "closes": "17:00"
-        },
+        "priceRange": "$$",
         "sameAs": [
             "https://www.etsy.com/shop/PoeticCloud",
             "https://instagram.com/poeticcloud"
@@ -42,15 +25,15 @@ export function JsonLd() {
     };
 
     const productSchema = {
-        "@context": "https://schema.org/",
+        "@context": "https://schema.org",
         "@type": "Product",
         "name": "Custom Wedding Stationery",
         "image": [
-            "https://poeticcloud.com/images/hero-invitation.jpg",
-            "https://poeticcloud.com/images/save-the-dates.jpg",
-            "https://poeticcloud.com/images/wedding-suites.jpg"
+            "https://poeticclouddesign.com/images/wedding-menu-placecards.jpg",
+            "https://poeticclouddesign.com/images/save-the-dates.jpg",
+            "https://poeticclouddesign.com/images/wedding-suites-menu-placecards-2.png"
         ],
-        "description": "Bespoke invitations and handmade wedding cards tailored to your unique love story.",
+        "description": "Bespoke wedding invitations and handcrafted stationery suites tailored to your unique love story.",
         "brand": {
             "@type": "Brand",
             "name": "Poetic Cloud"
@@ -59,9 +42,8 @@ export function JsonLd() {
             "@type": "AggregateOffer",
             "url": "https://www.etsy.com/shop/PoeticCloud",
             "priceCurrency": "USD",
-            "lowPrice": "5",
-            "highPrice": "500",
-            "offerCount": "50"
+            "lowPrice": "25",
+            "highPrice": "500"
         }
     };
 
@@ -69,7 +51,7 @@ export function JsonLd() {
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(onlineBusinessSchema) }}
             />
             <script
                 type="application/ld+json"

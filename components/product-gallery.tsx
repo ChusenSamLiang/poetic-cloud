@@ -19,7 +19,7 @@ const products = [
     description:
       "Complete invitation suites featuring coordinated pieces from save the dates to day-of stationery.",
     image: "/images/wedding-suites-menu-placecards-2.png",
-    alt: "Bespoke wedding invitation suite - handcrafted fine paper stationery by Poetic Cloud",
+    alt: "Bespoke wedding invitation suite — handcrafted fine paper stationery by Poetic Cloud",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const products = [
     description:
       "Personal correspondence deserves beautiful paper. Monograms, thank you cards, and more.",
     image: "/images/custom-stationery-placecards.jpg",
-    alt: "Custom monogram stationery and thank you cards - Poetic Cloud, NYC",
+    alt: "Custom monogram stationery and thank you cards | Poetic Cloud NYC",
   },
 ]
 
@@ -70,7 +70,7 @@ export function ProductGallery() {
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <Image
                     src={product.image || "/placeholder.svg"}
-                    alt={product.title}
+                    alt={product.alt}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     priority={index === 0}

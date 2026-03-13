@@ -23,6 +23,9 @@ export function HeroSection() {
           <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl text-balance">
             {HERO_CONTENT.title}
           </h1>
+          <p className="mt-4 font-serif text-xl italic text-muted-foreground">
+            {HERO_CONTENT.subtitle}
+          </p>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
             {HERO_CONTENT.description}
           </p>

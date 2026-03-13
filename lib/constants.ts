@@ -9,7 +9,8 @@ export const SITE_CONFIG = {
 
 export const HERO_CONTENT = {
   badge: "Fine Art Stationery",
-  title: "Paper Goods for Life's Most Poetic Moments",
+  title: "Bespoke Wedding Invitations & Custom Stationery | Handcrafted in New York",
+  subtitle: "Paper Goods for Life's Most Poetic Moments",
   description: "Handcrafted wedding invitations and bespoke stationery, designed to tell your unique love story with timeless elegance and artisan quality.",
   primaryCta: "Start Your Project",
   secondaryCta: "View Collections",
